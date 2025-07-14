@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "id": "user-admin-01",
+      "email": "admin@riceworld.com",
+      "password": "hashed_password_admin",
+      "role": "admin",
+      "isActive": true
+    },
+    {
+      "id": "user-dealer-01",
+      "email": "dealer@wholesaler.com",
+      "password": "hashed_password_dealer",
+      "role": "dealer",
+      "dealerId": "dealer-001",
+      "isActive": true
+    },
+    {
+      "id": "user-dealer-02",
+      "email": "dealer2@traders.com",
+      "password": "hashed_password_dealer2",
+      "role": "dealer",
+      "dealerId": "dealer-002",
+      "isActive": true
+    },
+    {
+      "id": "user-public-01",
+      "email": "customer@gmail.com",
+      "password": "hashed_password_public",
+      "role": "public",
+      "isActive": true
+    }
+  ],
+  "dealers": [
+    {
+      "id": "dealer-001",
+      "userId": "user-dealer-01",
+      "businessName": "Super Rice Wholesalers",
+      "contactName": "Mr. Gupta",
+      "phone": "9876543210",
+      "status": "approved",
+      "tier": "platinum"
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-basmati-01",
+      "name": "Himalayan Crown Basmati Rice",
+      "description": "Premium, aged long-grain basmati rice.",
+      "isActive": true
+    }
+  ],
+  "orders": [
+    {
+      "id": "order-001",
+      "userId": "user-dealer-01",
+      "orderDate": "2024-05-20T10:00:00Z",
+      "status": "delivered",
+      "totalAmount": 7400
+    }
+  ]
+}
